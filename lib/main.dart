@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_c/classes/convertir.dart';
+import 'package:proyecto_c/classes/fahrenheit.dart';
+import 'package:proyecto_c/classes/kelvin.dart';
 
 void main() {
   runApp(TabBarDemo());
@@ -129,7 +131,14 @@ class TabBarDemo extends StatelessWidget {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {
-                        final SnackBar_ = SnackBar(content: Text("holaaaa"));
+                        d = double.parse(txtcController.text);
+                        fahrenheit.dato = d;
+                        double x;
+                        fahrenheit.fak();
+                        x = fahrenheit.resultado;
+
+                        final SnackBar_ =
+                            SnackBar(content: Text("el resultado es $x"));
 
                         ScaffoldKey.currentState?.showSnackBar(SnackBar_);
                       },
@@ -154,7 +163,14 @@ class TabBarDemo extends StatelessWidget {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {
-                        final SnackBar_ = SnackBar(content: Text("holaaaa"));
+                        d = double.parse(txtcController.text);
+                        fahrenheit.dato = d;
+                        double x;
+                        fahrenheit.fac();
+                        x = fahrenheit.resultado;
+
+                        final SnackBar_ =
+                            SnackBar(content: Text("el resultado es $x"));
 
                         ScaffoldKey.currentState?.showSnackBar(SnackBar_);
                       },
@@ -179,7 +195,14 @@ class TabBarDemo extends StatelessWidget {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {
-                        final SnackBar_ = SnackBar(content: Text("holaaaa"));
+                        d = double.parse(txtcController.text);
+                        kelvin.dato = d;
+                        double x;
+                        kelvin.kaf();
+                        x = kelvin.resultado;
+
+                        final SnackBar_ =
+                            SnackBar(content: Text("el resultado es $x"));
 
                         ScaffoldKey.currentState?.showSnackBar(SnackBar_);
                       },
@@ -204,7 +227,14 @@ class TabBarDemo extends StatelessWidget {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {
-                        final SnackBar_ = SnackBar(content: Text("holaaaa"));
+                        d = double.parse(txtcController.text);
+                        kelvin.dato = d;
+                        double x;
+                        kelvin.kac();
+                        x = kelvin.resultado;
+
+                        final SnackBar_ =
+                            SnackBar(content: Text("el resultado es $x"));
 
                         ScaffoldKey.currentState?.showSnackBar(SnackBar_);
                       },
